@@ -1,0 +1,13 @@
+<script>
+    document.write(`------Cetak Value Dgn For of-------<br/>`);
+    const cars = ["BMW", "Volvo", "Mini"];
+    for (let mobil of cars) {
+        document.write(`${mobil} <br/>`);
+    }
+    document.write(`-------Cetak Key Dgn For of-----<br />`);
+    document.write(`${Object.keys(cars)}`);
+    document.write("<hr />");
+    for (let mobil in cars) {
+        document.write(`${cars[mobil]} <br/>`);
+    }
+</script>
