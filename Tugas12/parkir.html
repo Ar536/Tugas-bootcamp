@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkir</title>
+</head>
+<body>
+    <p>contoh:</p>
+        <table border = true>
+        <tr>
+            <th>Jam Masuk</th>
+            <th>Jam keluar</th>
+            <th>Lama</th>
+            <th>Biaya</th>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>10</td>
+            <td>2</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>11</td>
+            <td>4</td>
+            <td>5000</td>
+        </tr>
+        </table>
+        <br>
+        
+        <h3>Hitung Biaya Parkir</h3>
+    <form action="">
+            
+        <label for="masuk">Masuk parkir:</label>
+        <input id="masuk" type="number" onchange="convert()"><br>
+            
+        <label for="keluar">Keluar parkir:</label>
+        <input id="keluar" type="number" onchange="convert()""><br>
+
+        <button onclick="parkir()">Biaya parkir </button>
+        <span id="harga"></span>
+
+        <script src="parkir.js"></script>    
+    </form>
+</body>
+</html>
