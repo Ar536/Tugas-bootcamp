@@ -12,7 +12,7 @@ class Balok {
     }
 
     hitungKeliling(){
-        return 4 * (this.panjang + this.lebar + this.tinggi)
+        return 4 * ((this.panjang * 1) + (this.lebar * 1) + (this.tinggi * 1))
     }
 
     hitungVolume(){

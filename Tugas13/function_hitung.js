@@ -18,5 +18,5 @@ function hitung() {
     
 
     // tampilkan
-    document.getElementById('hasil').textContent = `Luas ${luaspermukaan} cm2, keliling ${keliling} cm, Volume ${Volume} cm3`
+    document.getElementById('hasil').textContent = `Luas ${luaspermukaan} cm2, keliling ${keliling} cm2, Volume ${Volume} cm3`
 }
