@@ -2,9 +2,9 @@ class Balok {
     
 
     constructor(p,l,t){
-        this.panjang = p
-        this.lebar = l
-        this.tinggi = t
+        this.panjang = Number(p)
+        this.lebar = Number(l)
+        this.tinggi = Number(t)
     }
 
     hitungLuas(){
@@ -12,7 +12,7 @@ class Balok {
     }
 
     hitungKeliling(){
-        return 4 * ((this.panjang * 1) + (this.lebar * 1) + (this.tinggi * 1))
+        return 4 * (this.panjang  + this.lebar  + this.tinggi)
     }
 
     hitungVolume(){
