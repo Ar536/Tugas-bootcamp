@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>x
+</head>
+<body>
+    <select name="" id="selectImg">
+        <option value="normal">Eevee</option>
+        <option value="fire">Flareon</option>
+        <option value="water">Vaporeon</option>
+        <option value="electric">Jolteon</option>
+        <option value="dark">Umbreon</option>
+        <option value="psychic">Espeon</option>
+        <option value="fairy">Sylveon</option>
+        <option value="grass">Leafeon</option>
+        <option value="ice">Glaceon</option>
+    </select>
+
+    <figure>
+        <img id="imgFigure" src="" alt="">
+    </figure>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+         $("document").ready(function(){
+            $('#selectImg').change(function() {
+            let picker = document.getElementById('selectImg').value;
+            let image = document.getElementById('ImgFigure');
+            
+            if (picker == "normal") {
+                image.src = img/Eevee.jpg;
+                image.width = 300;
+                image.alt = 'ini adalah gambar Eevee';
+             alert("Ini adalah gambar Eevee");
+            } else if (picker == 'fire'){
+                image.src = img/Flareon.webp;
+                image.width = 300;
+                image.alt = 'ini adalah gambar Flareon';
+                alert("Ini adalah gambar Flareon");
+            } else if (picker == 'water'){
+                image.src = "img/Vaporeon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Vaporeon';
+                alert("Ini adalah gambar Vaporeon");
+            } else if (picker == 'electric'){
+                image.src = "img/Jolteon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Jolteon';
+                alert("Ini adalah gambar Jolteon");
+            } else if (picker == 'dark'){
+                image.src = "img/Umbreon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Umbreon';
+                alert("Ini adalah gambar Umbreon");
+            } else if (picker == 'psychic'){
+                image.src = "img/Espeon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Espeon';
+                alert("Ini adalah gambar Espeon");
+            } else if (picker === 'fairy'){
+                image.src == "img/Sylveon.jpg"
+                image.width = 300;
+                image.alt = 'ini adalah gambar Sylveon';
+                alert("Ini adalah gambar Sylveon");
+            } else if (picker == 'grass'){
+                image.src = "img/Leafeon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Leofeon';
+                alert("Ini adalah gambar Leafeon");
+            } else if (picker == 'icy'){
+                image.src = "img/Glaceon.jpg";
+                image.width = 300;
+                image.alt = 'ini adalah gambar Glaceon';
+                alert("Ini adalah gambar Glaceon");
+            }else{
+                alert('Tidak Valid');
+            }
+
+            })  
+        });
+    </script>
+</body>
+</html>
